@@ -244,10 +244,15 @@ body {
     margin-top: 250px;
   }
 } 
-
+  .navigation button {
+    margin-top: 220px;
+  }
 
 @media(max-width: 450px) {
   .navigation{
     margin-top: 270px;
   }
+    .navigation button {
+    margin-top: 240px;
+    }
 }

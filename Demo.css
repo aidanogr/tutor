@@ -141,11 +141,10 @@ body {
   .navigation {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
   }
 
   .navigation button {
-    margin-top: 250px;
+    margin-top: 265px;
     padding: 5px 10px;
     background-color: #f0f0f0;
     border: none;
@@ -246,6 +245,6 @@ body {
 
 @media(max-width: 450px) {
   .navigation{
-    margin-top: 230px;
+    margin-top: 270px;
   }
 }

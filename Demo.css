@@ -141,10 +141,11 @@ body {
   .navigation {
     display: flex;
     justify-content: center;
+    margin-top: 220px;
   }
 
   .navigation button {
-    margin-top: 250px;
+    
     padding: 5px 10px;
     background-color: #f0f0f0;
     border: none;

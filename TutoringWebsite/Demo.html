@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutoring Company</title>
+  <link rel="stylesheet" type="text/css" href="Demo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo_jpg.jpg" alt="Company Logo">
+    </div>
+    <div class="button-container">
+      <a href="#form" class="button">Contact Us</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <h1>Our Services</h1>
+      <div class="boxes">
+        <div class="service-box">
+          <h3>Group Lessons ($20/hour)</h3>
+          <p>Weekly two hour sessions involving warm-up questions,
+            lesson breakdowns and a main focus on key concepts, including hand-written practice
+            problems to apply what we learned. Offered for ACCT 229 tutoring.</p>
+      </div>
+      
+      <div class="service-box">
+          <h3>Private Sessions ($40/hour)</h3>
+          <p>Personalized tutoring sessions to focus on the individual
+            needs of students. This allows extra time for questions and additional explanation to
+            comprehend difficult concepts. Offered for ACCT 229 tutoring.</p>
+      </div>
+      
+      <div class="service-box">
+          <h3>Online Tutoring ($Variable)</h3>
+          <p>For students who do not have transportation or simply do
+            not prefer meeting in person, both group lessons and private sessions can be held
+            online. Materials will be presented through Zoom. Offered for ACCT 229 tutoring.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h1>About Aggie Business Tutors</h1>
+      <p>Hi! I’m Brady Dinkel, the founder of Aggie Business Tutors. It sounds fancy, but simply
+        put, I’m just one student helping another to succeed.
+        I started tutoring ACCT 229 while I was in the midst of taking the course with friends
+        who were having a bit of a tough time breaking down the content. It’s a fast-paced class
+        with lots of stuff to cram in, so it can be challenging to keep pace.
+        Beginning to tutor ACCT 229 was one of the best decisions I made my freshmen year.
+        As a young entrepreneur, I have spent time trying various businesses; tutoring is the
+        one my heart and soul is in.
+        As a bonus, I’m just a nerd. Accounting makes sense to me and I enjoy it. I hope that
+        after going through tutoring with Aggie Business Tutors, students will feel the same
+        about ACCT 229 and business in general.</p>
+    </div>
+  </section>
+
+
+<hr>
+  <section id="ethos">
+      <div class="personalStatement">
+        <h1>My credentials:</h1>
+      <p>
+      I will be applying for PPA, the Professional Program for Accounting, when I am enrolled
+      in ACCT 327. I finished ACCT 229 with an A and helped friends to pass the course.
+    </p>
+  </div>
+        <div class="reccomendation">
+          <h1>Proffesional reccomendation</h1>
+          <p>ldkalsfjqpoeiwrj lkdnsa,vm oqpwejrhlkja lkfjdlksajoiqewo lknsdalfnoiwelhjrnnasd,mnqowiehrljkdgalk</p>
+        </div>  
+  </section>
+
+
+
+  
+  <div class="testimonials-container">
+    <div class="testimonial active">
+      <h1>Client testimonials</h1>
+      <p>“Brady always made sure I understood the topic by going over it several times. He even
+        went as far as to make original worksheets for us to practice concepts with. He
+        instituted a refund policy in case we did not do as well as we hoped, going above and
+        beyond the duties of a normal tutor.”</p>
+    </div>
+    <div class="testimonial">
+      <h1>Client testimonials</h1>
+      <p>“I was struggling in ACCT 229, but luckily a very good friend of mine was good at it. I
+        asked for his help and soon enough found out I wasn’t the only one. Brady is a very
+        intelligent, bright individual who had worked out practice problems in his free time to
+        help answer our questions. Not to mention, he was still taking ACCT along with other
+        classes. He gave us very good advice, great practice problems, and many different
+        ways to approach specific problems. I wish I had started studying with him sooner!”</p>
+    </div>
+    <div class="testimonial">
+      <h1>Client testimonials</h1>
+      <p>“I would always fill in my notes during class time for ACCT 229, but Brady helped me
+        fully understand what I was writing down. He helped me prepare for exams by reviewing
+        material and providing relevant sample questions, even outside of those from the
+        textbook. He’s very good at breaking down confusing concepts into simple, more
+        memorable terms, and I highly recommend him.”</p>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>  
+
+  <section id="form">
+    <div class="container">
+      <h1>Contact me</h1>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeA8nxl7bkJ98IS8vguDgqgFVnr6LsYXsITSClsU-sF-DTI-g/viewform?embedded=true" width="100%" height="840" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+
+
+  
+
+  <footer>
+    <div class="social-media">
+      <a href="#" class="social-icon"><img src="facebook_icon.png" alt="Facebook"></a>
+      <a href="#" class="social-icon"><img src="twitter_icon.png" alt="Twitter"></a>
+      <a href="#" class="social-icon"><img src="instagram_icon.png" alt="Instagram"></a>  
+    </div>
+  </footer>
+</body>
+
+<script>
+ const testimonials = document.querySelectorAll('.testimonial');
+  let currentIndex = 0;
+  let intervalId;
+
+  function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+      if (i === index) {
+        testimonial.classList.add('active');
+      } else {
+        testimonial.classList.remove('active');
+      }
+    });
+  }
+
+  function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+    resetInterval();
+  }
+
+  function prevTestimonial() {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+    resetInterval();
+  }
+
+  function resetInterval() {
+    clearInterval(intervalId);
+    intervalId = setInterval(nextTestimonial, 15000);
+  }
+
+  const nextBtn = document.getElementById('nextBtn');
+  nextBtn.addEventListener('click', nextTestimonial);
+
+  const prevBtn = document.getElementById('prevBtn');
+  prevBtn.addEventListener('click', prevTestimonial);
+
+  resetInterval();
+</script>
+
+</html>

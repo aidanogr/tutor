@@ -87,6 +87,12 @@ body {
     color: #182a56;
     background-color: white;
   }
+
+#about h1 {
+  font-family: 'circula-medium';
+}
+
+
   body {
     text-align: center;
     justify-content: center;
@@ -148,9 +154,9 @@ body {
 
 
 
-  h1, h2{
+  h1, h2, h3{
     padding-bottom: 10px;
-    font-family: 'circula-medium';
+    font-family: 'Monkier-Regular';
   }
 
   h1 {
@@ -163,7 +169,6 @@ body {
   
   h3 {
     font-size: 26px;
-    font-family: 'Monkier-Regular';
   }
 
   .ls {

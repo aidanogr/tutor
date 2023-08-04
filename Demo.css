@@ -33,7 +33,7 @@ body {
     text-align: right;
   }
   
-  .button {
+  button {
     text-align: center;
     padding: 10px 20px;
     background-color: #333;

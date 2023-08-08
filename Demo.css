@@ -48,8 +48,7 @@ body {
   button {
     text-align: center;
     padding: 10px 20px;
-    color: #a10808;
-    text-decoration: none;
+    background-color: #a10808;
     border-radius: 10px;
     font-family:'Monkier-Regular';
     font-size: 15px;

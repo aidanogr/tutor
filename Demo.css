@@ -48,10 +48,10 @@ body {
   button {
     text-align: center;
     padding: 10px 20px;
-    background-color: #a10808;
     border-radius: 10px;
     font-family:'Monkier-Regular';
     font-size: 15px;
+    margin: 20px;
   }
   
   .section {
@@ -157,6 +157,8 @@ body {
   }
 
   .navigation button {
+    
+    background-color: #a10808;
     margin-top: 200px;
     padding: 5px 10px;
     border: none;

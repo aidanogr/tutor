@@ -1,4 +1,4 @@
 # tutorwebsite
-Demo tutor website source for contract.
+Demo tutor website source for client.
 
 Website available @ aggiebusinesstutors.com
